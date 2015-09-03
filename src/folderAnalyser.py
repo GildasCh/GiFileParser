@@ -11,6 +11,7 @@ class FolderStruct:
 	def __init__(self, yamlDef):
 		self._required = yamlDef['folder']['required']
 		self._optional = yamlDef['folder']['optional']
+		self._terminal = yamlDef['folder']['terminal']
 		# print(yamlDef)
 		# print(self._required)
 		
@@ -24,7 +25,7 @@ class FolderStruct:
 			for f in files:
 				fname, ext = os.path.splitext(f)
 				if ext in self._required[kr]:
-					ret[kr] = f
+					ret[kr] = os.path.abspath(os.path.join(folder,f))
 					found = True
 					break
 			if not found:
@@ -36,8 +37,8 @@ class FolderStruct:
 			for f in files:
 				fname, ext = os.path.splitext(f)
 				if ext in self._optional[ko]:
-					ret[ko] = f
+					ret[ko] = os.path.abspath(os.path.join(folder,f))
 					found = True
 					break
 			
-		return True, ret
+		return self._terminal, ret

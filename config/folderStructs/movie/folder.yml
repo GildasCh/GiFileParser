@@ -17,4 +17,4 @@ folder:
         - '.jpeg'
         - '.png'
         - '.gif'
-        
+  terminal: True

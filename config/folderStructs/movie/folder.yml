@@ -1,0 +1,20 @@
+folder:
+  required:
+    movieFile:
+      - '.mkv'
+      - '.mp4'
+      - '.avi'
+  optional:
+    cover:
+      - '.jpg'
+      - '.jpeg'
+      - '.png'
+      - '.gif'
+    nfo: '.nfo'
+    sub:
+      images:
+        - '.jpg'
+        - '.jpeg'
+        - '.png'
+        - '.gif'
+        

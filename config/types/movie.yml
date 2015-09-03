@@ -1,0 +1,15 @@
+movie:
+  type: //rec
+  required:
+    title: //str
+    movieFile: //str
+    extension: //str
+  optional:
+    cover: //str
+    nfo: //str
+    images:
+      type: //arr
+      length: { min: 1 }
+      contents: { type: //str }
+    
+  

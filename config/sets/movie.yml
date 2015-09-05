@@ -1,0 +1,8 @@
+movie:
+  required:
+    movieFile: i/video
+  optional:
+    cover: i/image
+    nfo: i/nfo
+    images: s/imageSet
+  terminal: True

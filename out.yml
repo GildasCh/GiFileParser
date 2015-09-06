@@ -1,31 +1,37 @@
 testSet:
   files:
-    movie: testSet/lahorse.avi
+    video: testSet/lahorse.avi
   type: movie
 testSet/bruge:
   files:
-    movie: testSet/bruge/bruge.mkv
+    nfo: testSet/bruge/hd.nfo
+    video: testSet/bruge/bruge.mkv
   type: movie
 testSet/bruge/photos:
   files:
-    movie: testSet/bruge/photos/5.jpg
+    image: testSet/bruge/photos/5.jpg
+    video: testSet/bruge/photos/sample.mkv
   type: movie
 testSet/photos:
   files:
-    imageSet: testSet/photos/5.jpg
+    image: testSet/photos/5.jpg
   type: imageSet
 testSet/pulp:
   files:
-    movie: testSet/pulp/p.nfo
+    image: testSet/pulp/cover.jpg
+    nfo: testSet/pulp/p.nfo
+    video: testSet/pulp/p.avi
   type: movie
 testSet/true:
   files: {}
   type: unkown
 testSet/true/s1:
   files:
-    movie: testSet/true/s1/s1e03.mp4
+    image: testSet/true/s1/s1e04.jpg
+    video: testSet/true/s1/s1e03.mp4
   type: movie
 testSet/true/s2:
   files:
-    movie: testSet/true/s2/s2e06.mp4
+    image: testSet/true/s2/s2e02.jpg
+    video: testSet/true/s2/s2e06.mp4
   type: movie

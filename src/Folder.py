@@ -36,7 +36,7 @@ class Folder:
 		d = {self._rootPath: {'type':self._type._name, 'files': {}}}
 		files = d[self._rootPath]['files']
 		for f in self._files:
-			files[self._type._name] = f._path
+			files[f._type._name] = f._path
 		for fo in self._folders:
 			d = dict(list(d.items()) + list(self._folders[fo].generateDef().items()))
 		return d

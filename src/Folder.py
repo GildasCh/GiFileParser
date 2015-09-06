@@ -33,10 +33,13 @@ class Folder:
 		print(self._folders)
 
 	def generateDef(self):
-		d = {self._rootPath: {'type':self._type._name, 'files': {}}}
+		d = {self._rootPath: {'type':self._type._name, 'files': {}, 'folders': {}}}
 		files = d[self._rootPath]['files']
+		folders = d[self._rootPath]['folders']
 		for f in self._files:
-			files[f._type._name] = f._path
+			files[f._path] = f._type._name
+		for fo in self._folders:
+			folders[self._folders[fo]._rootPath] = self._folders[fo]._type._name
 		for fo in self._folders:
 			d = dict(list(d.items()) + list(self._folders[fo].generateDef().items()))
 		return d

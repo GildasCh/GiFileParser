@@ -1,3 +1,8 @@
 imageSet:
   required:
     image: 'a/i/image'
+  optional:
+    image0: 'i/image'
+    image1: 'i/image'
+
+    

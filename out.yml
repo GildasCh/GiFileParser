@@ -1,37 +1,100 @@
 testSet:
   files:
-    video: testSet/lahorse.avi
+    testSet/lahorse.avi: video
+  folders:
+    testSet/bruge: movie
+    testSet/photos: imageSet
+    testSet/pulp: movie
+    testSet/true: unkown
   type: movie
 testSet/bruge:
   files:
-    nfo: testSet/bruge/hd.nfo
-    video: testSet/bruge/bruge.mkv
+    testSet/bruge/bruge.mkv: video
+    testSet/bruge/hd.nfo: nfo
+  folders:
+    testSet/bruge/photos: imageSet
   type: movie
 testSet/bruge/photos:
   files:
-    image: testSet/bruge/photos/5.jpg
-    video: testSet/bruge/photos/sample.mkv
-  type: movie
+    testSet/bruge/photos/1.jpg: image
+    testSet/bruge/photos/10.jpg: image
+    testSet/bruge/photos/2.jpg: image
+    testSet/bruge/photos/3.jpg: image
+    testSet/bruge/photos/4.jpg: image
+    testSet/bruge/photos/5.jpg: image
+    testSet/bruge/photos/6.jpg: image
+    testSet/bruge/photos/7.jpg: image
+    testSet/bruge/photos/8.jpg: image
+    testSet/bruge/photos/9.jpg: image
+    testSet/bruge/photos/sample.mkv: video
+    testSet/bruge/photos/{3...10}.jpg: image
+  folders: {}
+  type: imageSet
 testSet/photos:
   files:
-    image: testSet/photos/5.jpg
+    testSet/photos/1.jpg: image
+    testSet/photos/10.jpg: image
+    testSet/photos/2.jpg: image
+    testSet/photos/3.jpg: image
+    testSet/photos/4.jpg: image
+    testSet/photos/5.jpg: image
+    testSet/photos/6.jpg: image
+    testSet/photos/7.jpg: image
+    testSet/photos/8.jpg: image
+    testSet/photos/9.jpg: image
+    testSet/photos/{3...10}.jpg: image
+  folders: {}
   type: imageSet
 testSet/pulp:
   files:
-    image: testSet/pulp/cover.jpg
-    nfo: testSet/pulp/p.nfo
-    video: testSet/pulp/p.avi
+    testSet/pulp/cover.jpg: image
+    testSet/pulp/p.avi: video
+    testSet/pulp/p.nfo: nfo
+  folders: {}
   type: movie
 testSet/true:
   files: {}
+  folders:
+    testSet/true/s1: imageSet
+    testSet/true/s2: imageSet
   type: unkown
 testSet/true/s1:
   files:
-    image: testSet/true/s1/s1e04.jpg
-    video: testSet/true/s1/s1e03.mp4
-  type: movie
+    testSet/true/s1/s1e01.jpg: image
+    testSet/true/s1/s1e01.mp4: video
+    testSet/true/s1/s1e02.jpg: image
+    testSet/true/s1/s1e02.mp4: video
+    testSet/true/s1/s1e03.jpg: image
+    testSet/true/s1/s1e03.mp4: video
+    testSet/true/s1/s1e04.jpg: image
+    testSet/true/s1/s1e04.mp4: video
+    testSet/true/s1/s1e05.jpg: image
+    testSet/true/s1/s1e05.mp4: video
+    testSet/true/s1/s1e06.jpg: image
+    testSet/true/s1/s1e06.mp4: video
+    testSet/true/s1/s1e07.jpg: image
+    testSet/true/s1/s1e07.mp4: video
+    testSet/true/s1/s1e08.jpg: image
+    testSet/true/s1/s1e08.mp4: video
+  folders: {}
+  type: imageSet
 testSet/true/s2:
   files:
-    image: testSet/true/s2/s2e02.jpg
-    video: testSet/true/s2/s2e06.mp4
-  type: movie
+    testSet/true/s2/s2e01.jpg: image
+    testSet/true/s2/s2e01.mp4: video
+    testSet/true/s2/s2e02.jpg: image
+    testSet/true/s2/s2e02.mp4: video
+    testSet/true/s2/s2e03.jpg: image
+    testSet/true/s2/s2e03.mp4: video
+    testSet/true/s2/s2e04.jpg: image
+    testSet/true/s2/s2e04.mp4: video
+    testSet/true/s2/s2e05.jpg: image
+    testSet/true/s2/s2e05.mp4: video
+    testSet/true/s2/s2e06.jpg: image
+    testSet/true/s2/s2e06.mp4: video
+    testSet/true/s2/s2e07.jpg: image
+    testSet/true/s2/s2e07.mp4: video
+    testSet/true/s2/s2e08.jpg: image
+    testSet/true/s2/s2e08.mp4: video
+  folders: {}
+  type: imageSet

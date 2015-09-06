@@ -1,28 +1,31 @@
 testSet:
-  movieFile: /home/gildas/prog/GiFileParser/lahorse.avi
+  files:
+    movie: testSet/lahorse.avi
   type: movie
 testSet/bruge:
-  movieFile: /home/gildas/prog/GiFileParser/bruge.mkv
-  nfo: /home/gildas/prog/GiFileParser/hd.nfo
+  files:
+    movie: testSet/bruge/bruge.mkv
   type: movie
 testSet/bruge/photos:
-  cover: /home/gildas/prog/GiFileParser/5.jpg
-  movieFile: /home/gildas/prog/GiFileParser/sample.mkv
+  files:
+    movie: testSet/bruge/photos/5.jpg
   type: movie
 testSet/photos:
-  image: /home/gildas/prog/GiFileParser/5.jpg
+  files:
+    imageSet: testSet/photos/5.jpg
   type: imageSet
 testSet/pulp:
-  cover: /home/gildas/prog/GiFileParser/cover.jpg
-  movieFile: /home/gildas/prog/GiFileParser/p.avi
-  nfo: /home/gildas/prog/GiFileParser/p.nfo
+  files:
+    movie: testSet/pulp/p.nfo
   type: movie
-testSet/true: {}
+testSet/true:
+  files: {}
+  type: unkown
 testSet/true/s1:
-  cover: /home/gildas/prog/GiFileParser/s1e04.jpg
-  movieFile: /home/gildas/prog/GiFileParser/s1e03.mp4
+  files:
+    movie: testSet/true/s1/s1e03.mp4
   type: movie
 testSet/true/s2:
-  cover: /home/gildas/prog/GiFileParser/s2e02.jpg
-  movieFile: /home/gildas/prog/GiFileParser/s2e06.mp4
+  files:
+    movie: testSet/true/s2/s2e06.mp4
   type: movie

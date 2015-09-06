@@ -3,6 +3,7 @@ import sys
 import yaml
 sys.path.append('src')
 import Folder
+import TypeManager
 
 # Main
 
@@ -12,7 +13,7 @@ itemsDir = 'config/items'
 setsDir = 'config/sets'
 outputDIr = 'output'
 
-f = Folder.Folder(rootDir, itemsDir, setsDir)
+f = Folder.Folder(rootDir, TypeManager.TypeManager(itemsDir, setsDir))
 f.analyse()
 f.print()
 

@@ -1,4 +1,5 @@
 import os
+import yaml
 import TypeManager
 
 class Folder:
@@ -26,3 +27,6 @@ class Folder:
 
 	def print(self):
 		print(self._folders)
+
+	def saveToYaml(self, out):
+		open(out, 'w').write(yaml.dump(self._folders, default_flow_style=False))

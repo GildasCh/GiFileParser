@@ -29,21 +29,21 @@ class TypeManager:
 		self._data = []
 
 	def guess(self, files, sets):
-		items = []
+		items = {}
 		# Files to items
 		for f in files:
 			for i in self._items:
 				if i.match(f):
-					items.append(i)
+					items[i._name] = os.path.abspath(f)
 					break
 		# Guess set
-		ret = None
 		bestScore = 0
+		ret = {}
 		for s in self._sets:
-			score = s.matchScore(items, sets)
+			score, retTmp = s.matchScore(items, sets)
 			if score > bestScore:
 				bestScore = score
-				ret = s
+				ret = retTmp
 		return ret
 
 

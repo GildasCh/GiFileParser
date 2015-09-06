@@ -49,16 +49,35 @@ class Set(Type):
 		else:
 			return t in sets
 		
+	def find(self, items, sets, tdef):
+		split = tdef.split('/')
+		m = split[-2]
+		t = split[-1]
+		if m == 'i':
+			for i in items:
+				if t == i:
+					return items[i]
+		else:
+			for s in sets:
+				if t == s:
+					return s
+		
 	def matchScore(self, items, sets):
 		score = 0
+		ret = {'type': self._name}
 		for kr in self._required:
 			tdef = self._required[kr]
 			if not self.isThere(items, sets, tdef):
-				return 0
+				return 0, {}
+			ret[kr] = self.find(items, sets, tdef)
 			score = score + 1
 		for ko in self._optional:
 			tdef = self._optional[ko]
 			if self.isThere(items, sets, tdef):
 				score = score + 1
-		return score
+				ret[ko] = self.find(items, sets, tdef)
+		return score, ret
 		
+
+
+	

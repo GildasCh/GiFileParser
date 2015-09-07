@@ -44,6 +44,3 @@ class Folder:
 			d = dict(list(d.items()) + list(self._folders[fo].generateDef().items()))
 		return d
 
-	def saveToYaml(self, out):
-		d = self.generateDef()
-		open(out, 'w').write(yaml.dump(d, default_flow_style=False))

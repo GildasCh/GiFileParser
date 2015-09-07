@@ -1,24 +1,27 @@
-import os
 import sys
-import yaml
 sys.path.append('src')
 import Folder
 import TypeManager
+import FolderAnalyser
+import ListGenerator
+import YamlWriter
 
 # Main
 
 rootDir = sys.argv[1]
-outFile = sys.argv[2]
-itemsDir = 'config/items'
-setsDir = 'config/sets'
-outputDIr = 'output'
+faOut = sys.argv[2]
+loOut = sys.argv[3]
 
-f = Folder.Folder(rootDir, TypeManager.TypeManager(itemsDir, setsDir))
-f.analyse()
-f.print()
+# Folder Analysis
+folderAnalysis = FolderAnalyser.analyseFolder(rootDir)
+YamlWriter.saveToYaml(folderAnalysis, faOut)
+print('Folder Analysis saved to ' + faOut)
 
-f.saveToYaml(outFile)
-print('Output saved to ' + outFile)
+# List generator
+listOutput = ListGenerator.generateList(folderAnalysis)
+YamlWriter.saveToYaml(listOutput, loOut)
+print('Generated List saved to ' + loOut)
+
 
 
 

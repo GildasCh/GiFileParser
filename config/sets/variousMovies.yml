@@ -1,0 +1,6 @@
+variousMovies:
+  required:
+    movies: a/i/video
+  optional:
+    others: a/s/variousMovies
+    movieDirs: a/s/movie

@@ -55,8 +55,8 @@ testSet/pulp:
 testSet/true:
   files: {}
   folders:
-    testSet/true/s1: imageSet
-    testSet/true/s2: imageSet
+    testSet/true/s1: seriesSeason
+    testSet/true/s2: seriesSeason
   type: unkown
 testSet/true/s1:
   files:
@@ -77,24 +77,16 @@ testSet/true/s1:
     testSet/true/s1/s1e08.jpg: image
     testSet/true/s1/s1e08.mp4: video
   folders: {}
-  type: imageSet
+  type: seriesSeason
 testSet/true/s2:
   files:
-    testSet/true/s2/s2e01.jpg: image
     testSet/true/s2/s2e01.mp4: video
-    testSet/true/s2/s2e02.jpg: image
     testSet/true/s2/s2e02.mp4: video
-    testSet/true/s2/s2e03.jpg: image
     testSet/true/s2/s2e03.mp4: video
-    testSet/true/s2/s2e04.jpg: image
     testSet/true/s2/s2e04.mp4: video
-    testSet/true/s2/s2e05.jpg: image
     testSet/true/s2/s2e05.mp4: video
-    testSet/true/s2/s2e06.jpg: image
     testSet/true/s2/s2e06.mp4: video
-    testSet/true/s2/s2e07.jpg: image
     testSet/true/s2/s2e07.mp4: video
-    testSet/true/s2/s2e08.jpg: image
     testSet/true/s2/s2e08.mp4: video
   folders: {}
-  type: imageSet
+  type: seriesSeason

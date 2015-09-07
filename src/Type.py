@@ -67,7 +67,23 @@ class Set(Type):
 			for s in sets:
 				if t == s:
 					return s
-		
+
+	def matchArrays(self, fa, sa):
+		matchArray = []
+		for si in sa:
+			split = si.split('/')
+			m = split[-2]
+			t = split[-1]
+			if t in fa:
+				matchArray.append(t)
+				fa.remove(t)
+				# Array
+				if len(split) >= 3 and split[-3] == 'a':
+					while t in fa:
+						matchArray.append(t)
+						fa.remove(t)
+		return len(matchArray)
+				
 	def matchScore(self, files, folders):
 		score = 0
 		ret = {'type': self._name}
@@ -75,20 +91,13 @@ class Set(Type):
 			tdef = self._required[kr]
 			if not self.isThere(files, folders, tdef):
 				return 0
-			#ret[kr] = self.find(items, sets, tdef)
-			score = score + 1
-		for ko in self._optional:
-			tdef = self._optional[ko]
-			if self.isThere(files, folders, tdef):
-				score = score + 1
-				#ret[ko] = self.find(items, sets, tdef)
-		# Other files
-		#otherFiles = []
-		#for i in items:
-		#	if not items[i] in ret.values():
-		#		otherFiles.append(items[i])
-		#ret['otherFiles'] = otherFiles
-		return score #, ret
+				#ret[kr] = self.find(items, sets, tdef)
+			# Score
+		folderArray = [f._type for f in files]
+		folderArray.extend([folders[f]._type for f in folders])
+		setArray = [self._required[t] for t in self._required]
+		setArray.extend([self._optional[t] for t in self._optional])
+		return self.matchArrays(folderArray, setArray)
 		
 
 

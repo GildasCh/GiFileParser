@@ -1,0 +1,6 @@
+seriesSeason:
+  required:
+    episodes: a/i/video
+  optional:
+    subtitles: a/i/subtitle
+    cover: i/image

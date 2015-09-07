@@ -1,12 +1,12 @@
 testSet:
 - movieDirs:
-  - testSet/pulp
   - testSet/bruge
+  - testSet/pulp
   movies:
   - testSet/lahorse.avi
   otherFiles:
-  - testSet/photos
   - testSet/true
+  - testSet/photos
   others: []
 testSet/bruge:
 - cover: []
@@ -19,32 +19,32 @@ testSet/bruge:
   otherFiles: []
 testSet/bruge/photos:
 - image:
-  - testSet/bruge/photos/{3...10}.jpg
-  - testSet/bruge/photos/10.jpg
-  - testSet/bruge/photos/9.jpg
-  - testSet/bruge/photos/6.jpg
-  - testSet/bruge/photos/3.jpg
-  - testSet/bruge/photos/1.jpg
-  - testSet/bruge/photos/4.jpg
-  - testSet/bruge/photos/5.jpg
-  - testSet/bruge/photos/2.jpg
   - testSet/bruge/photos/8.jpg
+  - testSet/bruge/photos/{3...10}.jpg
+  - testSet/bruge/photos/1.jpg
+  - testSet/bruge/photos/10.jpg
+  - testSet/bruge/photos/4.jpg
+  - testSet/bruge/photos/3.jpg
+  - testSet/bruge/photos/6.jpg
+  - testSet/bruge/photos/9.jpg
+  - testSet/bruge/photos/5.jpg
   - testSet/bruge/photos/7.jpg
+  - testSet/bruge/photos/2.jpg
   otherFiles:
   - testSet/bruge/photos/sample.mkv
 testSet/photos:
 - image:
-  - testSet/photos/1.jpg
   - testSet/photos/{3...10}.jpg
-  - testSet/photos/9.jpg
-  - testSet/photos/8.jpg
-  - testSet/photos/4.jpg
-  - testSet/photos/6.jpg
   - testSet/photos/7.jpg
-  - testSet/photos/3.jpg
-  - testSet/photos/10.jpg
-  - testSet/photos/2.jpg
+  - testSet/photos/4.jpg
+  - testSet/photos/1.jpg
   - testSet/photos/5.jpg
+  - testSet/photos/9.jpg
+  - testSet/photos/3.jpg
+  - testSet/photos/8.jpg
+  - testSet/photos/2.jpg
+  - testSet/photos/6.jpg
+  - testSet/photos/10.jpg
   otherFiles: []
 testSet/pulp:
 - cover:
@@ -62,35 +62,35 @@ testSet/true:
   - testSet/true/s1
 testSet/true/s1:
 - cover:
-  - testSet/true/s1/s1e07.jpg
   - testSet/true/s1/s1e04.jpg
   - testSet/true/s1/s1e08.jpg
-  - testSet/true/s1/s1e06.jpg
+  - testSet/true/s1/s1e07.jpg
   - testSet/true/s1/s1e02.jpg
   - testSet/true/s1/s1e05.jpg
   - testSet/true/s1/s1e01.jpg
+  - testSet/true/s1/s1e06.jpg
   - testSet/true/s1/s1e03.jpg
   episodes:
-  - testSet/true/s1/s1e01.mp4
-  - testSet/true/s1/s1e08.mp4
-  - testSet/true/s1/s1e04.mp4
-  - testSet/true/s1/s1e05.mp4
-  - testSet/true/s1/s1e07.mp4
-  - testSet/true/s1/s1e03.mp4
-  - testSet/true/s1/s1e06.mp4
   - testSet/true/s1/s1e02.mp4
+  - testSet/true/s1/s1e08.mp4
+  - testSet/true/s1/s1e03.mp4
+  - testSet/true/s1/s1e04.mp4
+  - testSet/true/s1/s1e07.mp4
+  - testSet/true/s1/s1e05.mp4
+  - testSet/true/s1/s1e01.mp4
+  - testSet/true/s1/s1e06.mp4
   otherFiles: []
   subtitles: []
 testSet/true/s2:
 - cover: []
   episodes:
-  - testSet/true/s2/s2e08.mp4
-  - testSet/true/s2/s2e05.mp4
   - testSet/true/s2/s2e07.mp4
-  - testSet/true/s2/s2e02.mp4
   - testSet/true/s2/s2e01.mp4
-  - testSet/true/s2/s2e04.mp4
   - testSet/true/s2/s2e03.mp4
+  - testSet/true/s2/s2e05.mp4
+  - testSet/true/s2/s2e08.mp4
   - testSet/true/s2/s2e06.mp4
+  - testSet/true/s2/s2e02.mp4
+  - testSet/true/s2/s2e04.mp4
   otherFiles: []
   subtitles: []

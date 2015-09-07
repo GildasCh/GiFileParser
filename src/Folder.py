@@ -1,4 +1,5 @@
 import os
+import time
 import yaml
 import TypeManager
 
@@ -37,9 +38,12 @@ class Folder:
 		files = d[self._rootPath]['files']
 		folders = d[self._rootPath]['folders']
 		for f in self._files:
-			files[f._path] = f._type._name
+			size = os.path.getsize(f._path)
+			modtime = time.ctime(os.path.getmtime(f._path))
+			files[f._path] = {'type': f._type._name, 'size': size, 'time': modtime}
 		for fo in self._folders:
-			folders[self._folders[fo]._rootPath] = self._folders[fo]._type._name
+			modtime = time.ctime(os.path.getmtime(self._folders[fo]._rootPath))
+			folders[self._folders[fo]._rootPath] = {'type': self._folders[fo]._type._name, 'time': modtime}
 		for fo in self._folders:
 			d = dict(list(d.items()) + list(self._folders[fo].generateDef().items()))
 		return d

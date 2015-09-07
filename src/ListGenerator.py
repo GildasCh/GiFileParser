@@ -3,8 +3,8 @@ import TypeManager
 def getElements(folder, r):
 	ret = []
 	rType = r['type'].split('/')[-1]
-	for fPath, fType in list(folder['files'].items()) + list(folder['folders'].items()):
-		if fType == rType:
+	for fPath, f in list(folder['files'].items()) + list(folder['folders'].items()):
+		if f['type'] == rType:
 			ret.append(fPath)
 	return ret
 

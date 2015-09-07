@@ -1,92 +1,265 @@
 testSet:
   files:
-    testSet/lahorse.avi: video
+    testSet/lahorse.avi:
+      size: 0
+      time: Fri Sep  4 12:03:31 2015
+      type: video
   folders:
-    testSet/bruge: movie
-    testSet/photos: imageSet
-    testSet/pulp: movie
-    testSet/true: series
+    testSet/bruge:
+      time: Thu Sep  3 16:24:02 2015
+      type: movie
+    testSet/photos:
+      time: Thu Sep  3 16:20:10 2015
+      type: imageSet
+    testSet/pulp:
+      time: Thu Sep  3 16:20:41 2015
+      type: movie
+    testSet/true:
+      time: Thu Sep  3 16:21:29 2015
+      type: series
   type: variousMovies
 testSet/bruge:
   files:
-    testSet/bruge/bruge.mkv: video
-    testSet/bruge/hd.nfo: nfo
+    testSet/bruge/bruge.mkv:
+      size: 38052
+      time: Mon Sep  7 16:26:14 2015
+      type: video
+    testSet/bruge/hd.nfo:
+      size: 0
+      time: Thu Sep  3 16:21:20 2015
+      type: nfo
   folders:
-    testSet/bruge/photos: imageSet
+    testSet/bruge/photos:
+      time: Fri Sep  4 12:03:31 2015
+      type: imageSet
   type: movie
 testSet/bruge/photos:
   files:
-    testSet/bruge/photos/1.jpg: image
-    testSet/bruge/photos/10.jpg: image
-    testSet/bruge/photos/2.jpg: image
-    testSet/bruge/photos/3.jpg: image
-    testSet/bruge/photos/4.jpg: image
-    testSet/bruge/photos/5.jpg: image
-    testSet/bruge/photos/6.jpg: image
-    testSet/bruge/photos/7.jpg: image
-    testSet/bruge/photos/8.jpg: image
-    testSet/bruge/photos/9.jpg: image
-    testSet/bruge/photos/sample.mkv: video
-    testSet/bruge/photos/{3...10}.jpg: image
+    testSet/bruge/photos/1.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/10.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/2.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/3.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/4.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/5.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/6.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/7.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/8.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/9.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
+    testSet/bruge/photos/sample.mkv:
+      size: 0
+      time: Fri Sep  4 12:03:31 2015
+      type: video
+    testSet/bruge/photos/{3...10}.jpg:
+      size: 0
+      time: Thu Sep  3 16:24:02 2015
+      type: image
   folders: {}
   type: imageSet
 testSet/photos:
   files:
-    testSet/photos/1.jpg: image
-    testSet/photos/10.jpg: image
-    testSet/photos/2.jpg: image
-    testSet/photos/3.jpg: image
-    testSet/photos/4.jpg: image
-    testSet/photos/5.jpg: image
-    testSet/photos/6.jpg: image
-    testSet/photos/7.jpg: image
-    testSet/photos/8.jpg: image
-    testSet/photos/9.jpg: image
-    testSet/photos/{3...10}.jpg: image
+    testSet/photos/1.jpg:
+      size: 0
+      time: Thu Sep  3 16:17:35 2015
+      type: image
+    testSet/photos/10.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/2.jpg:
+      size: 0
+      time: Thu Sep  3 16:17:38 2015
+      type: image
+    testSet/photos/3.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/4.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/5.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/6.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/7.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/8.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/9.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:10 2015
+      type: image
+    testSet/photos/{3...10}.jpg:
+      size: 0
+      time: Thu Sep  3 16:19:58 2015
+      type: image
   folders: {}
   type: imageSet
 testSet/pulp:
   files:
-    testSet/pulp/cover.jpg: image
-    testSet/pulp/p.avi: video
-    testSet/pulp/p.nfo: nfo
+    testSet/pulp/cover.jpg:
+      size: 0
+      time: Thu Sep  3 16:20:41 2015
+      type: image
+    testSet/pulp/p.avi:
+      size: 0
+      time: Thu Sep  3 16:20:41 2015
+      type: video
+    testSet/pulp/p.nfo:
+      size: 0
+      time: Thu Sep  3 16:20:41 2015
+      type: nfo
   folders: {}
   type: movie
 testSet/true:
   files: {}
   folders:
-    testSet/true/s1: seriesSeason
-    testSet/true/s2: seriesSeason
+    testSet/true/s1:
+      time: Thu Sep  3 16:23:18 2015
+      type: seriesSeason
+    testSet/true/s2:
+      time: Mon Sep  7 02:38:51 2015
+      type: seriesSeason
   type: series
 testSet/true/s1:
   files:
-    testSet/true/s1/s1e01.jpg: image
-    testSet/true/s1/s1e01.mp4: video
-    testSet/true/s1/s1e02.jpg: image
-    testSet/true/s1/s1e02.mp4: video
-    testSet/true/s1/s1e03.jpg: image
-    testSet/true/s1/s1e03.mp4: video
-    testSet/true/s1/s1e04.jpg: image
-    testSet/true/s1/s1e04.mp4: video
-    testSet/true/s1/s1e05.jpg: image
-    testSet/true/s1/s1e05.mp4: video
-    testSet/true/s1/s1e06.jpg: image
-    testSet/true/s1/s1e06.mp4: video
-    testSet/true/s1/s1e07.jpg: image
-    testSet/true/s1/s1e07.mp4: video
-    testSet/true/s1/s1e08.jpg: image
-    testSet/true/s1/s1e08.mp4: video
+    testSet/true/s1/s1e01.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e01.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e02.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e02.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e03.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e03.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e04.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e04.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e05.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e05.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e06.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e06.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e07.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e07.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
+    testSet/true/s1/s1e08.jpg:
+      size: 0
+      time: Thu Sep  3 16:22:54 2015
+      type: image
+    testSet/true/s1/s1e08.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:18 2015
+      type: video
   folders: {}
   type: seriesSeason
 testSet/true/s2:
   files:
-    testSet/true/s2/s2e01.mp4: video
-    testSet/true/s2/s2e02.mp4: video
-    testSet/true/s2/s2e03.mp4: video
-    testSet/true/s2/s2e04.mp4: video
-    testSet/true/s2/s2e05.mp4: video
-    testSet/true/s2/s2e06.mp4: video
-    testSet/true/s2/s2e07.mp4: video
-    testSet/true/s2/s2e08.mp4: video
+    testSet/true/s2/s2e01.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e02.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e03.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e04.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e05.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e06.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e07.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
+    testSet/true/s2/s2e08.mp4:
+      size: 0
+      time: Thu Sep  3 16:23:13 2015
+      type: video
   folders: {}
   type: seriesSeason

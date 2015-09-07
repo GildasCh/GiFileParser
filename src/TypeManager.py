@@ -25,8 +25,6 @@ class TypeManager:
 			ydef = yaml.load(open(os.path.join(setsPath, s)))
 			for k in ydef:
 				self._sets.append(Type.Set(k, ydef[k]))
-		# Data
-		self._data = []
 
 	def fileToItem(self, f):
 		for i in self._items:
@@ -44,5 +42,9 @@ class TypeManager:
 				ret = s
 		return ret
 
-
+	def getSet(self, name):
+		for s in self._sets:
+			if s._name == name:
+				return s
+		return None
 				

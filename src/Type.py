@@ -39,6 +39,30 @@ class Set(Type):
 			self._optional = self._def['optional']
 		else:
 			self._optional = {}
+		if 'terminal' in self._def:
+			self._terminal = self._def['terminal']
+		else:
+			self._terminal = False
+		# Defaults (diff. for required and optional)
+		for vr in list(self._required.values()):
+			if not 'min' in vr:
+				vr['min'] = 1
+		for vo in list(self._optional.values()):
+			if not 'min' in vo:
+				vr['min'] = 0
+		# Common defaults
+		for val in list(self._required.values()) + list(self._optional.values()):
+			if not 'max' in val:
+				val['max'] = 1
+			if not 'choice' in val:
+				val['choice'] = 'first filename'
+			if not 'order' in val:
+				val['order'] = 'filename'
+			if not 'weight' in val:
+				val['weight'] = 1
+			if not 'standalone' in val:
+				val['standalone'] = False
+		
 
 	def isThere(self, files, folders, tdef):
 		split = tdef.split('/')
@@ -55,43 +79,25 @@ class Set(Type):
 					return True
 			return False
 		
-	def find(self, items, sets, tdef):
-		split = tdef.split('/')
-		m = split[-2]
-		t = split[-1]
-		if m == 'i':
-			for i in items:
-				if t == i:
-					return items[i]
-		else:
-			for s in sets:
-				if t == s:
-					return s
-
 	def matchArrays(self, fa, sa):
-		matchArray = []
+		score = 0
 		for si in sa:
-			split = si.split('/')
+			split = si['type'].split('/')
 			m = split[-2]
 			t = split[-1]
-			if t in fa:
-				matchArray.append(t)
+			matches = 0
+			while t in fa and (si['max'] == 0 or matches < si['max']):
+				matches = matches + 1
 				fa.remove(t)
-				# Array
-				if len(split) >= 3 and split[-3] == 'a':
-					while t in fa:
-						matchArray.append(t)
-						fa.remove(t)
-		return len(matchArray)
+				score = score + si['weight']
+		return score
 				
 	def matchScore(self, files, folders):
 		score = 0
 		ret = {'type': self._name}
-		for kr in self._required:
-			tdef = self._required[kr]
+		for tdef in [self._required[kr]['type'] for kr in self._required]:
 			if not self.isThere(files, folders, tdef):
 				return 0
-				#ret[kr] = self.find(items, sets, tdef)
 			# Score
 		folderArray = [f._type for f in files]
 		folderArray.extend([folders[f]._type for f in folders])

@@ -1,3 +1,5 @@
 series:
   required:
-    seasons: a/s/seriesSeason
+    seasons:
+      type: s/seriesSeason
+      max: 0

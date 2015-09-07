@@ -1,6 +1,13 @@
 variousMovies:
   required:
-    movies: a/i/video
+    movies:
+      type: i/video
+      max: 0
   optional:
-    others: a/s/variousMovies
-    movieDirs: a/s/movie
+    others:
+      type: s/variousMovies
+      max: 0
+    movieDirs:
+      type: s/movie
+      max: 0
+  terminal: False

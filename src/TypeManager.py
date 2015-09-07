@@ -9,7 +9,7 @@ class TypeManager:
 		self._items = []
 		for i in os.listdir(itemsPath):
 			if not os.path.isfile(os.path.join(itemsPath, i)) \
-			   or i.endswith('~'):
+			   or not i.endswith('.yml'):
 				continue
 			name, ext = os.path.splitext(i)
 			ydef = yaml.load(open(os.path.join(itemsPath, i)))
@@ -19,7 +19,7 @@ class TypeManager:
 		self._sets = []
 		for s in os.listdir(setsPath):
 			if not os.path.isfile(os.path.join(setsPath, s)) \
-			   or i.endswith('~'):
+			   or not s.endswith('.yml'):
 				continue
 			name, ext = os.path.splitext(s)
 			ydef = yaml.load(open(os.path.join(setsPath, s)))

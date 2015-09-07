@@ -1,8 +1,17 @@
 movie:
   required:
-    movieFile: i/video
+    movieFile:
+      type: i/video
+      choice: first size
   optional:
-    cover: i/image
-    nfo: i/nfo
-    images: s/imageSet
+    cover:
+      type: i/image
+      choice: filename like movieFile
+    nfo:
+      type: i/nfo
+      choice: filename like movieFile
+    images:
+      type: s/imageSet
+      max: 0
+      weight: 0
   terminal: True

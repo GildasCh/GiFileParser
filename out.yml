@@ -56,7 +56,7 @@ testSet/true:
   files: {}
   folders:
     testSet/true/s1: seriesSeason
-    testSet/true/s2: variousMovies
+    testSet/true/s2: seriesSeason
   type: series
 testSet/true/s1:
   files:
@@ -89,4 +89,4 @@ testSet/true/s2:
     testSet/true/s2/s2e07.mp4: video
     testSet/true/s2/s2e08.mp4: video
   folders: {}
-  type: variousMovies
+  type: seriesSeason

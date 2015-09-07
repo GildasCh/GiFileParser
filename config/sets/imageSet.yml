@@ -1,6 +1,8 @@
 imageSet:
   required:
-    image: 'a/i/image'
+    image:
+      type: i/image
+      max: 0
 
 
     

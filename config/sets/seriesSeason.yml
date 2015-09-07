@@ -1,6 +1,14 @@
 seriesSeason:
   required:
-    episodes: a/i/video
+    episodes:
+      type: i/video
+      max: 0
   optional:
-    subtitles: a/i/subtitle
-    cover: i/image
+    subtitles:
+      type: i/subtitle
+      max: 0
+      choice: filename like episodes
+    cover:
+      type: i/image
+      max: 0
+      weight: 0

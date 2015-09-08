@@ -34,16 +34,16 @@ class Folder:
 		print(self._folders)
 
 	def generateDef(self):
-		d = {self._rootPath: {'type':self._type._name, 'files': {}, 'folders': {}}}
+		d = {self._rootPath: {'type': 'none' if self._type is None else self._type._name, 'files': {}, 'folders': {}}}
 		files = d[self._rootPath]['files']
 		folders = d[self._rootPath]['folders']
 		for f in self._files:
 			size = os.path.getsize(f._path)
 			modtime = time.ctime(os.path.getmtime(f._path))
-			files[f._path] = {'type': f._type._name, 'size': size, 'time': modtime}
+			files[f._path] = {'type': 'none' if f._type is None else f._type._name, 'size': size, 'time': modtime}
 		for fo in self._folders:
 			modtime = time.ctime(os.path.getmtime(self._folders[fo]._rootPath))
-			folders[self._folders[fo]._rootPath] = {'type': self._folders[fo]._type._name, 'time': modtime}
+			folders[self._folders[fo]._rootPath] = {'type': 'none' if self._folders[fo]._type is None else self._folders[fo]._type._name, 'time': modtime}
 		for fo in self._folders:
 			d = dict(list(d.items()) + list(self._folders[fo].generateDef().items()))
 		return d

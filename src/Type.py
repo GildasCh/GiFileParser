@@ -49,7 +49,7 @@ class Set(Type):
 				vr['min'] = 1
 		for vo in list(self._optional.values()):
 			if not 'min' in vo:
-				vr['min'] = 0
+				vo['min'] = 0
 		# Common defaults
 		for val in list(self._required.values()) + list(self._optional.values()):
 			if not 'max' in val:

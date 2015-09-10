@@ -65,6 +65,6 @@ def generateList(fa, tm):
 			listedFilesAndFolders.extend([] if elval is None else elval)
 		el['otherFiles'] = getRemainings(allFilesAndFolders, listedFilesAndFolders)
 		# Add element to output
-		output.setdefault('unkown' if typ is None else typ._name, [])
-		output['unkown' if typ is None else typ._name].append({kf: el})
+		output.setdefault('unkown' if typ is None else typ._name, {})
+		output['unkown' if typ is None else typ._name][kf] = el
 	return output

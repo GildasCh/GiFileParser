@@ -1,9 +1,16 @@
 import yaml
 
 def saveToYaml(d, out):
-	open(out, 'w').write(yaml.dump(d,
-								   default_flow_style=False,
-								   default_style='\''))
+	with open(out, 'w') as fp:
+		yaml.dump(d,
+				  stream=fp,
+				  default_flow_style=False,
+				  default_style='\'',
+				  allow_unicode=True)
+
+	#f = open(out,"wb")
+	#f.write(yaml.dump(d,
+	#				  allow_unicode=True,encoding="utf-8"))
 
 def openYaml(inp):
 	return yaml.load(open(inp, 'r'))

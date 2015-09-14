@@ -1,4 +1,5 @@
 import TypeManager
+import hashlib
 
 def choose(allEl, choice, ma):
 	split = choice.split(' ')
@@ -51,7 +52,10 @@ def generateList(fa, tm):
 		# Create element
 		typ = tm.getSet(f['type'])
 		el = {}
-		
+		# Root
+		el['root'] = kf
+		# Hash key calculation
+		hkf = hashlib.sha1(kf.encode()).hexdigest()
 		# Required
 		for kr, r in [] if typ is None else typ._required.items():
 			el[kr] = getElements(f, r)
@@ -66,5 +70,5 @@ def generateList(fa, tm):
 		el['otherFiles'] = getRemainings(allFilesAndFolders, listedFilesAndFolders)
 		# Add element to output
 		output.setdefault('unkown' if typ is None else typ._name, {})
-		output['unkown' if typ is None else typ._name][kf] = el
+		output['unkown' if typ is None else typ._name][hkf] = el
 	return output

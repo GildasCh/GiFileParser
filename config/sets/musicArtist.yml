@@ -1,0 +1,7 @@
+musicArtist:
+  required:
+    albums:
+      type: s/musicAlbum
+      max: 0
+      weight: 10
+      

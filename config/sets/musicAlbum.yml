@@ -1,0 +1,18 @@
+musicAlbum:
+  required:
+    songs:
+      type: i/audio
+      max: 0
+      weight: 10
+  optional:
+    cover:
+      type: i/image
+    images:
+      type: i/image
+      max: 0
+      weight: 0
+    imageSubDirs:
+      type: s/imageSet
+      max: 0
+      weight: 0
+  terminal: True
